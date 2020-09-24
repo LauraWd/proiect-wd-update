@@ -2,15 +2,20 @@
 document.querySelector(".hamburger")
         .addEventListener("click", toggle)
 
-function toggle(){
-    var menu = document.querySelector(".menu")
+function toggle() {
+    var menu1 = document.querySelector("#menu1")
+    var menu2 = document.querySelector("#meniu2")
     
-    if (menu.classList.contains("menu")) {
-        menu.classList.add("visible")
-        menu.classList.remove("hidden")
+    if (menu1.classList.contains("hidden")) {
+        menu1.classList.add("visible")
+        menu1.classList.remove("hidden")
+        menu2.classList.add("visible")
+        menu2.classList.remove("hidden")
     }
     else {
-        menu.classList.add("hidden")
-        menu.classList.remove("visible")
+        menu1.classList.add("hidden")
+        menu1.classList.remove("visible")
+        menu2.classList.add("hidden")
+        menu2.classList.remove("visible")
     }
 } 
